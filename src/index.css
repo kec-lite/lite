@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Orbitron", sans-serif;
+  --font-normal: "Inter", sans-serif;
+
+  --color-background: #0a0a0f;
+  --color-foreground: #fafafa;
+  --color-card: #111118;
+  --color-card-foreground: #fafafa;
+  --color-primary: #f97316;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1a1a24;
+  --color-secondary-foreground: #fafafa;
+  --color-muted: #27272f;
+  --color-muted-foreground: #a1a1aa;
+  --color-accent: #f97316;
+  --color-accent-foreground: #ffffff;
+  --color-border: #27272a;
+  --color-input: #1a1a24;
+  --color-ring: #f97316;
+
+  --background-image-glass-stack:
+    linear-gradient(to top, #38bdf81a, #38bdf800),
+    linear-gradient(to top, #38bdf81a, #38bdf800),
+    linear-gradient(to top, #0f172ae6, #0f172af2);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+}
