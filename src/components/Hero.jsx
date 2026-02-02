@@ -2,8 +2,11 @@ import { ArrowRight, Calendar, MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-glass-stack relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-[#252D3F] via-[#22293B] to-[#1C2436] pt-16">
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
+        <div className="pointer-events-none absolute top-32 left-0 z-10 h-80 w-90 rounded-full bg-[#2563EB33]/75 blur-[50px]"></div>
+        <div className="pointer-events-none absolute top-32 right-0 z-10 h-80 w-90 rounded-full bg-[#EA580C1A] blur-[50px]"></div>
+
         {/* Badge */}
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#3B82F64D]/30 bg-[#1E3A8A4D]/30 px-4 py-2 backdrop-blur-sm">
           <span className="relative flex h-2 w-2">
@@ -17,15 +20,17 @@ const Hero = () => {
 
         {/* Title */}
         <h1 className="font-heading mb-4 text-5xl font-bold tracking-tight text-white sm:text-7xl lg:text-8xl">
-          KEC{" "}
-          <span className="from-primary to-primary bg-linear-to-r via-orange-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-t from-white/50 via-white to-white/70 bg-clip-text text-transparent">
+            KEC{" "}
+          </span>
+          <span className="from-primary/50 to-primary/70 bg-linear-to-t via-orange-600 bg-clip-text text-transparent">
             LITE
           </span>
         </h1>
 
         {/* Year Badge */}
         <div className="mb-6">
-          <span className="font-heading text-3xl font-bold tracking-wider text-[#BFDBFE]">
+          <span className="font-heading text-4xl font-semibold tracking-tight text-[#BFDBFE]">
             2082
           </span>
         </div>

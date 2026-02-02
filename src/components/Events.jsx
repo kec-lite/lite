@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowRight, Users } from "lucide-react";
 
-const categories = ["All", "Electronics", "Computer", "Civil"];
+const categories = ["All", "Electronics", "Computer", "Civil", "Extra"];
 
 const events = [
   {

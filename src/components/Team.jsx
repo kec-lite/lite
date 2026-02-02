@@ -20,7 +20,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section id="team" className="bg-[#020617] px-4 py-24">
+    <section id="team" className="bg-[#0F172A] px-4 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <h2 className="text-foreground font-heading mb-4 text-4xl font-bold md:text-5xl">
@@ -42,7 +42,7 @@ const Team = () => {
             {teamMembers.map((member) => (
               <div
                 key={member.name}
-                className="group border-border/50 hover:border-primary/50 hover:shadow-primary/5 rounded-2xl border bg-[#1E293BB2]/70 p-6 text-center transition-all duration-300 hover:shadow-xl"
+                className="group border-border/50 hover:border-primary/50 hover:shadow-primary/5 rounded-2xl border bg-[#020617]/50 p-6 text-center transition-all duration-300 hover:shadow-xl"
               >
                 <div className="border-primary/30 group-hover:border-primary group-hover:shadow-primary/20 relative mx-auto mb-4 h-32 w-32 overflow-hidden rounded-full border-2 transition-all duration-300 group-hover:shadow-lg">
                   <img

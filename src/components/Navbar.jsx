@@ -13,11 +13,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="border-border/50 fixed top-0 right-0 left-0 z-50 border-b bg-[#1E293BB2] backdrop-blur-xl">
+    <nav className="border-border/50 fixed top-0 right-0 left-0 z-50 border-b bg-[#1A2436]  backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-18 items-center justify-between">
-          <a href="#" className="group flex items-center gap-2">
-            <div className="from-primary shadow-primary/25 flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br to-orange-600 shadow-lg transition-transform group-hover:scale-105">
+          <div className="group flex items-center gap-2">
+            <div className="from-primary shadow-primary/25 flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br to-orange-600 shadow-lg">
               <span className="font-heading text-sm font-bold text-white">
                 K
               </span>
@@ -25,7 +25,7 @@ const Navbar = () => {
             <span className="text-foreground font-heading text-lg font-bold">
               KEC <span className="text-primary">LITE</span>
             </span>
-          </a>
+          </div>
 
           <div className="hidden items-center gap-1 md:flex">
             {navLinks.map((link) => (

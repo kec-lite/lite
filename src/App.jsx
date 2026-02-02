@@ -4,7 +4,7 @@ import About from "./components/About";
 import Disciplines from "./components/Disciplines";
 import Events from "./components/Events";
 import Timeline from "./components/Timeline";
-import Registration from "./components/Registration";
+// import Registration from "./components/Registration";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
 
@@ -17,7 +17,7 @@ const App = () => {
       <Disciplines />
       <Events />
       <Timeline />
-      <Registration />
+      {/* <Registration /> */}
       <Team />
       <Footer />
     </div>
