@@ -69,8 +69,8 @@ const events = [
     image:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop",
     category: "Computer",
-    participants: "",
-    link: "",
+    participants: "3-4",
+    link: "https://forms.gle/zjBWetKNjGQPDzgY9",
   },
   {
     title: "NLP Explained",

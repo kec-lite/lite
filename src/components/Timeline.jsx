@@ -1,36 +1,45 @@
 const timelineDays = [
-  { title: "AI Videography", date: "February 8, 2026", link: "" },
-  { title: "3D Printing Workshop", date: "February 9, 2026", link: "" },
-  { title: "Game Dev Session", date: "February 10, 2026", link: "" },
-  { title: "Maze Solver Workshop", date: "February 13, 2026", link: "" },
-  { title: "Capture The Flag", date: "February 19, 2026", link: "" },
-  { title: "Hack-a-LITE", date: "February 20, 2026", link: "" },
-  { title: "NLP Explained", date: "February 22, 2026", link: "" },
-  { title: "Attack and Defense", date: "February 22, 2026", link: "" },
-  { title: "Code War", date: "February 23, 2026", link: "" },
-  { title: "Survey Rush", date: "February 23, 2026", link: "" },
-  { title: "UI/UX Workshop", date: "February 24, 2026", link: "" },
-  { title: "AutoCAD Competition", date: "February 24, 2026", link: "" },
-  { title: "Maze Competition", date: "February 24, 2026", link: "" },
-  { title: "Circuit Debugging", date: "February 24, 2026", link: "" },
-  { title: "Shake Table", date: "February 25, 2026", link: "" },
-  { title: "Integration Bee", date: "February 25, 2026", link: "" },
-  { title: "Popsicle Bridge", date: "February 25, 2026", link: "" },
-  { title: "Robo Soccer", date: "February 25, 2026", link: "" },
-  { title: "Robo Race", date: "February 25, 2026", link: "" },
-  { title: "Project Demonstration", date: "February 26, 2026", link: "" },
-  { title: "Trace the Code", date: "February 26, 2026", link: "" },
-  { title: "Templatathon", date: "", link: "" },
+  { title: "AI Videography", date: "February 8, 2026" },
+  { title: "3D Printing Workshop", date: "February 9, 2026" },
+  { title: "Game Dev Session", date: "February 10, 2026" },
+  { title: "Maze Solver Workshop", date: "February 13, 2026" },
+  { title: "Capture The Flag", date: "February 19, 2026" },
+  { title: "Hack-a-LITE", date: "February 20, 2026" },
+  {
+    title: ["NLP Explained", "Attack and Defense"],
+    date: "February 22, 2026",
+  },
+  {
+    title: ["Code War", "Survey Rush"],
+    date: "February 23, 2026",
+  },
+  {
+    title: [
+      "UI/UX Workshop",
+      "AutoCAD Competition",
+      "Maze Competition",
+      "Circuit Debugging",
+    ],
+    date: "February 24, 2026",
+  },
+  {
+    title: [
+      "Shake Table",
+      "Integration Bee",
+      "Popsicle Bridge",
+      "Robo Soccer",
+      "Robo Race",
+    ],
+    date: "February 25, 2026",
+  },
+  {
+    title: ["Project Demonstration", "Trace the Code"],
+    date: "February 26, 2026",
+  },
+  { title: "Templatathon", date: "" },
 ];
 
 const Timeline = () => {
-  const scrollToEvent = (eventName) => {
-    const eventsSection = document.getElementById("events");
-    if (eventsSection) {
-      eventsSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section id="timeline" className="bg-[#020617] px-4 py-24">
       <div className="mx-auto max-w-4xl">
@@ -62,14 +71,24 @@ const Timeline = () => {
                   }`}
                 >
                   <a
-                    href={item.link}
-                    target="_blank"
+                    href="#events"
                     rel="noopener noreferrer"
                     className="group border-border/50 bg-card hover:border-primary/30 hover:shadow-primary/5 block w-full rounded-2xl border p-5 text-left transition-all hover:shadow-xl"
                   >
-                    <h3 className="text-foreground group-hover:text-primary font-heading text-lg font-semibold transition-colors">
-                      {item.title}
-                    </h3>
+                    {Array.isArray(item.title) ? (
+                      item.title.map((title, titleIndex) => (
+                        <h3
+                          key={titleIndex}
+                          className="text-foreground group-hover:text-primary font-heading text-lg font-semibold transition-colors"
+                        >
+                          - {title}
+                        </h3>
+                      ))
+                    ) : (
+                      <h3 className="text-foreground group-hover:text-primary font-heading text-lg font-semibold transition-colors">
+                        - {item.title}
+                      </h3>
+                    )}
                     <p className="text-muted-foreground mt-1 text-sm">
                       {item.date}
                     </p>
