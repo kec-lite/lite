@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shubhamaryal.github.io/kec-lite",
+  "homepage": "https://kec-lite.github.io/lite",
 
   "scripts": {
     "dev": "vite",
