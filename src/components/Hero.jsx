@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="pointer-events-none absolute top-32 right-0 z-10 h-80 w-90 rounded-full bg-[#EA580C1A] blur-[50px]"></div>
 
         {/* Badge */}
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#3B82F64D]/30 bg-[#1E3A8A4D]/30 px-4 py-2 backdrop-blur-sm">
+        <div className="mb-6 mt-6 sm:mt-0 inline-flex items-center gap-2 rounded-full border border-[#3B82F64D]/30 bg-[#1E3A8A4D]/30 px-4 py-2 backdrop-blur-sm">
           <span className="relative flex h-2 w-2">
             <span className="bg-primary absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" />
             <span className="bg-primary relative inline-flex h-2 w-2 rounded-full" />
