@@ -1,6 +1,12 @@
 import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 
-const sponsors = ["Broadway Infosys", "Evolve IT", "Aether", "Edusanjal", "Programiz"];
+const sponsors = [
+  "Broadway Infosys",
+  "Evolve IT",
+  "Aether",
+  "Edusanjal",
+  "Programiz",
+];
 
 const Footer = () => {
   const socialLinks = [
@@ -40,15 +46,13 @@ const Footer = () => {
         <div className="border-border/50 border-t pt-12">
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
             <div>
-              <a href="#" className="group mb-4 inline-flex items-center gap-2">
-                <div className="from-primary shadow-primary/25 flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br to-orange-600 shadow-lg">
-                  <span className="font-heading text-sm font-bold text-white">
-                    K
-                  </span>
+              <a href="#" className="group mb-0 inline-flex items-center gap-2">
+                <div className="flex h-20 w-20 items-center justify-center">
+                  <img alt="lite-logo" src="lite-logos/Logo Dark.png" />
                 </div>
-                <span className="text-foreground font-heading text-lg font-bold">
+                {/* <span className="text-foreground font-heading text-lg font-bold">
                   KEC <span className="text-primary">LITE</span>
-                </span>
+                </span> */}
               </a>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Kantipur Engineering College&apos;s annual tech fest celebrating

@@ -13,10 +13,10 @@ const App = () => {
     <div className="text-foreground min-h-screen font-normal overflow-hidden">
       <Navbar />
       <Hero />
-      <About />
-      <Disciplines />
       <Timeline />
       <Events />
+      <About />
+      <Disciplines />
       {/* <Registration /> */}
       {/* <Team /> */}
       <Footer />

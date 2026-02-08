@@ -17,14 +17,17 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-18 items-center justify-between">
           <div className="group flex items-center gap-2">
-            <div className="from-primary shadow-primary/25 flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br to-orange-600 shadow-lg">
+            {/* <div className="from-primary shadow-primary/25 flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br to-orange-600 shadow-lg">
               <span className="font-heading text-sm font-bold text-white">
                 K
               </span>
+            </div> */}
+            <div className="flex h-20 w-20 items-center justify-center">
+              <img alt="lite-logo" src="lite-logos/Logo Dark.png" />
             </div>
-            <span className="text-foreground font-heading text-lg font-bold">
+            {/* <span className="text-foreground font-heading text-lg font-bold">
               KEC <span className="text-primary">LITE</span>
-            </span>
+            </span> */}
           </div>
 
           <div className="hidden items-center gap-1 md:flex">
@@ -32,7 +35,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="hover:text-muted-foreground px-4 py-2 text-sm font-medium text-white transition duration-300"
+                className="hover:text-muted-foreground px-4 py-2 text-sm font-medium text-white transition duration-300 hover:scale-110"
               >
                 {link.label}
               </a>
