@@ -7,7 +7,7 @@ export const events = [
       "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop",
     category: "Extra",
     participants: "",
-    link: "",
+    link: "https://forms.gle/qNURZ7LYMYbBAVKQA",
     click: true,
   },
   {
@@ -40,8 +40,8 @@ export const events = [
       "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?w=400&h=300&fit=crop",
     category: "Electronics",
     participants: "",
-    link: "",
-    click: false,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSf_mKaR1w7an5t1-BrElLrdkwC8PUdeeEhd9Wn1ibJ2a2nFAQ/viewform?usp=dialog",
+    click: true,
   },
   {
     title: "Capture The Flag",
@@ -165,14 +165,14 @@ export const events = [
     click: false,
   },
   {
-    title: "Maze Competition",
+    title: "Maze Solver Robot Competition",
     description:
       "Build autonomous robots that can navigate through intricate mazes in the shortest time possible.",
     image:
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
     category: "Electronics",
     participants: "30",
-    link: "",
+    link: "https://forms.gle/Tc3Kcvs748FU1sXVA",
     click: false,
   },
   {
@@ -194,7 +194,7 @@ export const events = [
       "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=400&h=300&fit=crop",
     category: "Electronics",
     participants: "40",
-    link: "",
+    link: "https://forms.gle/irrfDaXsTFcMsEoX6",
     click: false,
   },
   {
@@ -205,7 +205,7 @@ export const events = [
       "https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=400&h=300&fit=crop",
     category: "Electronics",
     participants: "30",
-    link: "",
+    link: "https://forms.gle/dGJLR7SJiQxED6tt8",
     click: false,
   },
   {
@@ -241,4 +241,45 @@ export const events = [
     link: "",
     click: false,
   },
+];
+
+export const timelineDays = [
+  { title: "AI Videography", date: "February 8, 2026" },
+  { title: "3D Printing Workshop", date: "February 9, 2026" },
+  { title: "Game Dev Session", date: "February 10, 2026" },
+  { title: "Maze Solver Workshop", date: "February 13, 2026" },
+  { title: "Capture The Flag", date: "February 19, 2026" },
+  { title: "Hack-a-LITE", date: "February 20, 2026" },
+  {
+    title: ["NLP Explained", "Attack and Defense"],
+    date: "February 22, 2026",
+  },
+  {
+    title: ["Code War", "Survey Rush"],
+    date: "February 23, 2026",
+  },
+  {
+    title: [
+      "UI/UX Workshop",
+      "AutoCAD Competition",
+      "Maze Solver Robot Competition",
+      "Circuit Debugging",
+    ],
+    date: "February 24, 2026",
+  },
+  {
+    title: [
+      "Shake Table",
+      "Integration Bee",
+      "Popsicle Bridge",
+      "Robo Soccer",
+      "Robo Race",
+    ],
+    date: "February 25, 2026",
+  },
+  {
+    title: ["Project Demonstration", "Trace the Code"],
+    date: "February 26, 2026",
+  },
+  { title: "Templatathon", date: "" },
 ];

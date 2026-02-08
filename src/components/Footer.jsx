@@ -1,12 +1,6 @@
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Facebook,
-  Instagram,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 
-const sponsors = ["TECHCORP", "NEXUS", "CYBERDYNE", "ROBOTIX", "FUTURELABS"];
+const sponsors = ["Broadway Infosys", "Evolve IT", "Aether", "Edusanjal", "Programiz"];
 
 const Footer = () => {
   const socialLinks = [

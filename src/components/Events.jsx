@@ -29,7 +29,8 @@ const Events = () => {
   const hasMoreEvents = filteredEvents.length > INITIAL_DISPLAY_COUNT;
 
   return (
-    <section id="events" className="bg-[#0F172A] px-4 py-24">
+    // <section id="events" className="bg-[#0F172A] px-4 py-24">
+    <section id="events" className="bg-[#020617] px-4 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>

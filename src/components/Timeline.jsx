@@ -1,47 +1,9 @@
-const timelineDays = [
-  { title: "AI Videography", date: "February 8, 2026" },
-  { title: "3D Printing Workshop", date: "February 9, 2026" },
-  { title: "Game Dev Session", date: "February 10, 2026" },
-  { title: "Maze Solver Workshop", date: "February 13, 2026" },
-  { title: "Capture The Flag", date: "February 19, 2026" },
-  { title: "Hack-a-LITE", date: "February 20, 2026" },
-  {
-    title: ["NLP Explained", "Attack and Defense"],
-    date: "February 22, 2026",
-  },
-  {
-    title: ["Code War", "Survey Rush"],
-    date: "February 23, 2026",
-  },
-  {
-    title: [
-      "UI/UX Workshop",
-      "AutoCAD Competition",
-      "Maze Competition",
-      "Circuit Debugging",
-    ],
-    date: "February 24, 2026",
-  },
-  {
-    title: [
-      "Shake Table",
-      "Integration Bee",
-      "Popsicle Bridge",
-      "Robo Soccer",
-      "Robo Race",
-    ],
-    date: "February 25, 2026",
-  },
-  {
-    title: ["Project Demonstration", "Trace the Code"],
-    date: "February 26, 2026",
-  },
-  { title: "Templatathon", date: "" },
-];
+import { timelineDays } from "../lists/events";
 
 const Timeline = () => {
   return (
-    <section id="timeline" className="bg-[#020617] px-4 py-24">
+    // <section id="timeline" className="bg-[#020617] px-4 py-24">
+      <section id="timeline" className="bg-[#0F172A] px-4 py-24">
       <div className="mx-auto max-w-4xl">
         <div className="mb-16 text-center">
           <h2 className="text-foreground font-heading mb-4 text-4xl font-bold md:text-5xl">
