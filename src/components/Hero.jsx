@@ -55,7 +55,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="mb-8 h-px w-full bg-gray-700/80"></div>
+        <div className="mb-8 h-px w-full bg-white/15"></div>
 
         {/* Stats */}
         <div className="grid grid-cols-2 gap-6 sm:gap-16 md:grid-cols-4">
