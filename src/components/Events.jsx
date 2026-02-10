@@ -30,7 +30,11 @@ const Events = () => {
 
   return (
     // <section id="events" className="bg-[#0F172A] px-4 py-24">
-    <section id="events" className="bg-[#020617] px-4 py-24">
+    // <section id="events" className="bg-[#020617] px-4 py-24">
+    <section
+      id="events"
+      className="bg-linear-to-b from-[#012D71] via-[#0C3C7E] to-[#1E4981] px-4 py-24"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
@@ -75,16 +79,16 @@ const Events = () => {
               <CardWrapper
                 key={event.title}
                 {...cardProps}
-                className={`group border-border/50 block overflow-hidden rounded-2xl border bg-[#1E293B] transition-all duration-300 ${
+                className={`group border-border/50 block overflow-hidden rounded-2xl border bg-[#1E1E1E] transition-all duration-300 ${
                   event.click
-                    ? "hover:border-primary/50 hover:shadow-primary/5 cursor-pointer hover:shadow-xl"
+                    ? "hover:shadow-primary/5 cursor-pointer hover:border-white hover:shadow-xl"
                     : "cursor-not-allowed opacity-65"
                 }`}
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={event.image}
-                    alt={event.title}
+                    alt={event.title} 
                     className={`h-full w-full object-cover transition-transform duration-500 ${
                       event.click ? "group-hover:scale-110" : ""
                     }`}
@@ -111,7 +115,7 @@ const Events = () => {
                   </p>
                   <div
                     className={`inline-flex items-center gap-1 text-sm font-medium ${
-                      event.click ? "text-primary" : "text-primary/80"
+                      event.click ? "text-[#0A8EFD]" : "text-[#0A8EFD]/80"
                     }`}
                   >
                     {event.click ? "Register Now" : "Registration Opening Soon"}
@@ -130,7 +134,7 @@ const Events = () => {
             <button
               type="button"
               onClick={() => setShowAll(!showAll)}
-              className="bg-primary hover:bg-primary/90 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-medium text-white transition-all hover:scale-105"
+              className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[#0C8EFD] px-6 py-3 font-medium text-white transition-all hover:scale-105 hover:bg-[#0C8EFD]/90"
             >
               {showAll ? (
                 <>

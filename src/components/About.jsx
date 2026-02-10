@@ -9,14 +9,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="bg-[#0F172A] px-4 py-24">
+    <section id="about" className="bg-[#012264] px-4 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2 className="text-foreground font-heading mb-6 text-4xl leading-tight font-bold md:text-5xl">
               Innovating for a
               <br />
-              <span className="from-primary bg-linear-to-r to-orange-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-l from-[#1E1E1E]/20 to-25% to-white bg-clip-text text-transparent">
                 Better Tomorrow
               </span>
             </h2>

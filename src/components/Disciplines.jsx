@@ -37,7 +37,11 @@ const disciplines = [
 
 const Disciplines = () => {
   return (
-    <section id="disciplines" className="bg-[#020617] px-4 py-24">
+    // <section id="disciplines" className="bg-[#020617] px-4 py-24">
+    <section
+      id="disciplines"
+      className="bg-linear-to-b from-[#012D71] via-[#0C3B7E] to-[#1E477C] px-4 py-24"
+    >
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <h2 className="text-foreground font-heading mb-4 text-4xl font-bold md:text-5xl">
@@ -54,7 +58,7 @@ const Disciplines = () => {
             return (
               <div
                 key={discipline.title}
-                className={`group border-border/50 relative overflow-hidden rounded-2xl border bg-[#1E293BB2] p-6 transition-all duration-300 hover:border-(--hover-color) hover:shadow-xl`}
+                className={`group border-border/50 relative overflow-hidden rounded-2xl border bg-[#1E1E1E] p-6 transition-all duration-300 hover:border-(--hover-color) hover:shadow-xl`}
                 style={{ "--hover-color": discipline.color }}
               >
                 {/* Gradient background on hover */}

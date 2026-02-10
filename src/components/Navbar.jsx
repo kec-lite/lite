@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="border-border/50 fixed top-0 right-0 left-0 z-50 border-b bg-[#1A2436] backdrop-blur-xl">
+    <nav className="border-border/50 fixed top-0 right-0 left-0 z-50 border-b bg-[#1E1E1E] backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-18 items-center justify-between">
           <div className="group flex items-center gap-2">
@@ -42,7 +42,7 @@ const Navbar = () => {
             ))}
             <a
               href="#events"
-              className="bg-primary hover:bg-primary/75 ml-4 inline-flex items-center justify-center rounded-3xl px-5 py-2 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:shadow-xl"
+              className="ml-4 inline-flex items-center justify-center rounded-3xl bg-[#0A8EFD] px-5 py-2 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:bg-[#0A8EFD]/75 hover:shadow-xl"
             >
               Register Now
             </a>
@@ -73,7 +73,7 @@ const Navbar = () => {
               ))}
               <a
                 href="#registration"
-                className="bg-primary shadow-primary/25 mt-2 inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-white shadow-lg"
+                className="mt-2 inline-flex items-center justify-center rounded-lg bg-[#0A8EFD] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#0A8EFD]/25"
                 onClick={() => setIsOpen(false)}
               >
                 Register Now

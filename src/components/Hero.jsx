@@ -2,16 +2,16 @@ import { ArrowRight, Calendar, MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-[#252D3F] via-[#22293B] to-[#1C2436] pt-16">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-b from-[#012D71] via-[#0E3C7F] to-[#1E4880] pt-16">
       <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
-        <div className="pointer-events-none absolute top-32 left-0 z-10 h-80 w-90 rounded-full bg-[#2563EB33]/75 blur-[50px]"></div>
-        <div className="pointer-events-none absolute top-32 right-0 z-10 h-80 w-90 rounded-full bg-[#EA580C1A] blur-[50px]"></div>
+        {/* <div className="pointer-events-none absolute top-32 left-0 z-10 h-80 w-90 rounded-full bg-[#2563EB33]/75 blur-[50px]"></div>
+        <div className="pointer-events-none absolute top-32 right-0 z-10 h-80 w-90 rounded-full bg-[#EA580C1A] blur-[50px]"></div> */}
 
         {/* Badge */}
-        <div className="mb-6 mt-6 sm:mt-0 inline-flex items-center gap-2 rounded-full border border-[#3B82F64D]/30 bg-[#1E3A8A4D]/30 px-4 py-2 backdrop-blur-sm">
+        <div className="mt-6 mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-[#1E3A8A4D]/30 px-4 py-2 backdrop-blur-sm sm:mt-0">
           <span className="relative flex h-2 w-2">
-            <span className="bg-primary absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" />
-            <span className="bg-primary relative inline-flex h-2 w-2 rounded-full" />
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0A8EFD] opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0A8EFD]" />
           </span>
           <span className="text-sm font-medium text-[##BFDBFE]">
             THE FUTURE OF ENGINEERING IS HERE
@@ -20,17 +20,14 @@ const Hero = () => {
 
         {/* Title */}
         <h1 className="font-heading mb-4 text-5xl font-bold tracking-tight text-white sm:text-7xl lg:text-8xl">
-          <span className="bg-linear-to-t from-white/50 via-white to-white/70 bg-clip-text text-transparent">
-            KEC{" "}
-          </span>
-          <span className="from-primary/50 to-primary/70 bg-linear-to-t via-orange-600 bg-clip-text text-transparent">
-            LITE
+          <span className="bg-linear-to-l from-[#1E1E1E]/20 via-white via-15% to-white bg-clip-text text-transparent">
+            KEC LITE
           </span>
         </h1>
 
         {/* Year Badge */}
         <div className="mb-6">
-          <span className="font-heading text-4xl font-semibold tracking-tight text-[#BFDBFE]">
+          <span className="font-heading text-4xl font-semibold tracking-tight text-white">
             2082
           </span>
         </div>

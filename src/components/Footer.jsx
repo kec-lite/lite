@@ -69,7 +69,7 @@ const Footer = () => {
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-muted-foreground hover:text-primary text-sm transition-colors"
+                      className="text-muted-foreground hover:text-[#0A8EFD] text-sm transition-colors"
                     >
                       {link}
                     </a>
@@ -84,15 +84,15 @@ const Footer = () => {
               </h4>
               <ul className="space-y-3">
                 <li className="text-muted-foreground flex items-center gap-3 text-sm">
-                  <MapPin className="text-primary h-4 w-4 shrink-0" />
+                  <MapPin className="h-4 w-4 shrink-0 text-[#0A8EFD]" />
                   Dhapakhel, Lalitpur
                 </li>
                 <li className="text-muted-foreground flex items-center gap-3 text-sm">
-                  <Phone className="text-primary h-4 w-4 shrink-0" />
+                  <Phone className="h-4 w-4 shrink-0 text-[#0A8EFD]" />
                   01-5229204
                 </li>
                 <li className="text-muted-foreground flex items-center gap-3 text-sm">
-                  <Mail className="text-primary h-4 w-4 shrink-0" />
+                  <Mail className="h-4 w-4 shrink-0 text-[#0A8EFD]" />
                   lite@kec.edu.np
                 </li>
               </ul>
@@ -109,7 +109,7 @@ const Footer = () => {
                     href={href || "#"}
                     target={href ? "_blank" : "_self"}
                     rel={href ? "noopener noreferrer" : undefined}
-                    className="bg-secondary text-muted-foreground hover:bg-primary/10 hover:text-primary flex h-10 w-10 items-center justify-center rounded-full transition-all"
+                    className="bg-secondary text-muted-foreground hover:bg-[#0A8EFD]/10 hover:text-[#0A8EFD] flex h-10 w-10 items-center justify-center rounded-full transition-all"
                     aria-label={label}
                   >
                     <Icon className="h-5 w-5" />
