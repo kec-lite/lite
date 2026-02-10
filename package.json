@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kec-lite.github.io/lite",
+  "homepage": "https://keclite.com/",
 
   "scripts": {
     "dev": "vite",
