@@ -14,13 +14,27 @@ const categoryColors = {
 
 const INITIAL_DISPLAY_COUNT = 6;
 
+const statusConfig = {
+  open: { text: "Register Now", color: "text-[#0A8EFD]" },
+  // soon: { text: "Registration Opening Soon", color: "text-[#0A8EFD]/80" },
+  soon: { text: "Registration Opening Soon", color: "text-yellow-600" },
+  ended: { text: "Registration Ended", color: "text-red-600" },
+};
+
 const Events = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [showAll, setShowAll] = useState(false);
 
-  const filteredEvents = events.filter(
-    (event) => activeCategory === "All" || event.category === activeCategory,
-  );
+  const filteredEvents = events
+    .filter(
+      (event) => activeCategory === "All" || event.category === activeCategory,
+    )
+    .sort((a, b) => {
+      // Sort ended events to the end
+      if (a.status === "ended" && b.status !== "ended") return 1;
+      if (a.status !== "ended" && b.status === "ended") return -1;
+      return 0;
+    });
 
   const displayedEvents = showAll
     ? filteredEvents
@@ -66,8 +80,9 @@ const Events = () => {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {displayedEvents.map((event) => {
-            const CardWrapper = event.click ? "a" : "div";
-            const cardProps = event.click
+            const isClickable = event.status === "open";
+            const CardWrapper = isClickable ? "a" : "div";
+            const cardProps = isClickable
               ? {
                   href: event.link,
                   target: "_blank",
@@ -80,7 +95,7 @@ const Events = () => {
                 key={event.title}
                 {...cardProps}
                 className={`group border-border/50 block overflow-hidden rounded-2xl border bg-[#1E1E1E] transition-all duration-300 ${
-                  event.click
+                  isClickable
                     ? "hover:shadow-primary/5 cursor-pointer hover:border-white hover:shadow-xl"
                     : "cursor-not-allowed opacity-65"
                 }`}
@@ -88,9 +103,9 @@ const Events = () => {
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={event.image}
-                    alt={event.title} 
+                    alt={event.title}
                     className={`h-full w-full object-cover transition-transform duration-500 ${
-                      event.click ? "group-hover:scale-110" : ""
+                      isClickable ? "group-hover:scale-110" : ""
                     }`}
                   />
                   <div className="from-card absolute inset-0 bg-linear-to-t via-transparent to-transparent" />
@@ -114,12 +129,10 @@ const Events = () => {
                     {event.description}
                   </p>
                   <div
-                    className={`inline-flex items-center gap-1 text-sm font-medium ${
-                      event.click ? "text-[#0A8EFD]" : "text-[#0A8EFD]/80"
-                    }`}
+                    className={`inline-flex items-center gap-1 text-sm font-medium ${statusConfig[event.status]?.color || statusConfig.soon.color}`}
                   >
-                    {event.click ? "Register Now" : "Registration Opening Soon"}
-                    {event.click && (
+                    {statusConfig[event.status]?.text || statusConfig.soon.text}
+                    {isClickable && (
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     )}
                   </div>

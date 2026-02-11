@@ -8,7 +8,7 @@ export const events = [
     category: "Extra",
     participants: "",
     link: "https://forms.gle/qNURZ7LYMYbBAVKQA",
-    click: true,
+    status: "open",
   },
   {
     title: "3D Printing Workshop",
@@ -19,7 +19,7 @@ export const events = [
     category: "Electronics",
     participants: "",
     link: "",
-    click: true,
+    status: "ended",
   },
   {
     title: "Game Dev Session",
@@ -30,7 +30,7 @@ export const events = [
     category: "Computer",
     participants: "",
     link: "https://luma.com/mzn0io1v",
-    click: true,
+    status: "ended",
   },
   {
     title: "Maze Solver Workshop",
@@ -41,7 +41,7 @@ export const events = [
     category: "Electronics",
     participants: "",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSf_mKaR1w7an5t1-BrElLrdkwC8PUdeeEhd9Wn1ibJ2a2nFAQ/viewform?usp=dialog",
-    click: true,
+    status: "open",
   },
   {
     title: "Capture The Flag",
@@ -52,7 +52,7 @@ export const events = [
     category: "Computer",
     participants: "",
     link: "",
-    click: false,
+    status: "soon",
   },
   {
     title: "Hack-a-LITE",
@@ -63,7 +63,7 @@ export const events = [
     category: "Computer",
     participants: "3-4",
     link: "https://forms.gle/zjBWetKNjGQPDzgY9",
-    click: true,
+    status: "open",
   },
   {
     title: "NLP Explained",
@@ -74,7 +74,7 @@ export const events = [
     category: "Computer",
     participants: "",
     link: "",
-    click: false,
+    status: "soon",
   },
   {
     title: "Attack and Defense",
@@ -85,7 +85,7 @@ export const events = [
     category: "Civil",
     participants: "",
     link: "https://forms.gle/HSQRo3wZEqPVdkWf9",
-    click: false,
+    status: "soon",
   },
   {
     title: "Code War",
@@ -96,7 +96,7 @@ export const events = [
     category: "Computer",
     participants: "",
     link: "",
-    click: false,
+    status: "soon",
   },
   {
     title: "Survey Rush",
@@ -107,7 +107,7 @@ export const events = [
     category: "Civil",
     participants: "",
     link: "https://forms.gle/UueLGE2Z2Z9mw19a9",
-    click: false,
+    status: "soon",
   },
   {
     title: "Integration Bee",
@@ -118,7 +118,7 @@ export const events = [
     category: "Extra",
     participants: "",
     link: "https://forms.gle/BaNbnjUHJG9mrH7g9",
-    click: false,
+    status: "soon",
   },
   {
     title: "UI/UX Workshop",
@@ -129,7 +129,7 @@ export const events = [
     category: "Computer",
     participants: "",
     link: "",
-    click: false,
+    status: "soon",
   },
   {
     title: "Shake Table",
@@ -140,7 +140,7 @@ export const events = [
     category: "Civil",
     participants: "",
     link: "https://forms.gle/RCh2cngzZrx89WbD7",
-    click: false,
+    status: "soon",
   },
   {
     title: "AutoCAD Competition",
@@ -151,7 +151,7 @@ export const events = [
     category: "Civil",
     participants: "",
     link: "https://forms.gle/4KEG6mKNxnCTdqPg8",
-    click: false,
+    status: "soon",
   },
   {
     title: "Popsicle Bridge",
@@ -162,7 +162,7 @@ export const events = [
     category: "Civil",
     participants: "https://forms.gle/MzTUwegQGCTpgPyk7",
     link: "",
-    click: false,
+    status: "soon",
   },
   {
     title: "Maze Solver Robot Competition",
@@ -173,7 +173,7 @@ export const events = [
     category: "Electronics",
     participants: "30",
     link: "https://forms.gle/Tc3Kcvs748FU1sXVA",
-    click: false,
+    status: "soon",
   },
   {
     title: "Circuit Debugging",
@@ -184,7 +184,7 @@ export const events = [
     category: "Electronics",
     participants: "30",
     link: "",
-    click: false,
+    status: "soon",
   },
   {
     title: "Robo Soccer",
@@ -195,7 +195,7 @@ export const events = [
     category: "Electronics",
     participants: "40",
     link: "https://forms.gle/irrfDaXsTFcMsEoX6",
-    click: false,
+    status: "soon",
   },
   {
     title: "Robo Race",
@@ -206,7 +206,7 @@ export const events = [
     category: "Electronics",
     participants: "30",
     link: "https://forms.gle/dGJLR7SJiQxED6tt8",
-    click: false,
+    status: "soon",
   },
   {
     title: "Model Competition",
@@ -217,7 +217,7 @@ export const events = [
     category: "All",
     participants: "",
     link: "https://forms.gle/2Ct8RYUQgqR1S14v6",
-    click: false,
+    status: "soon",
   },
   {
     title: "Trace the Code",
@@ -228,7 +228,7 @@ export const events = [
     category: "Computer",
     participants: "",
     link: "",
-    click: false,
+    status: "soon",
   },
   {
     title: "Templatathon",
@@ -239,7 +239,7 @@ export const events = [
     category: "Computer",
     participants: "",
     link: "",
-    click: false,
+    status: "soon",
   },
 ];
 
