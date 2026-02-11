@@ -1,11 +1,30 @@
 import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 
 const sponsors = [
-  "Broadway Infosys",
-  "Evolve IT",
-  "Aether",
-  "Edusanjal",
-  "Programiz",
+  {
+    "title": "Broadway Infosys",
+    "link": "#"
+  },
+  {
+    "title": "Evolve IT",
+    "link": "#"
+  },
+  {
+    "title": "Aether",
+    "link": "#"
+  },
+  {
+    "title": "Edusanjal",
+    "link": "#"
+  },
+  {
+    "title": "Programiz",
+    "link": "#"
+  },
+  {
+    "title": "App Technologies",
+    "link": "https://apptechnologies.co"
+  }
 ];
 
 const Footer = () => {
@@ -33,12 +52,14 @@ const Footer = () => {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-18">
             {sponsors.map((sponsor) => (
-              <span
-                key={sponsor}
+              <a
+                href={sponsor.link}
+                target="_blank"
+                key={sponsor.title}
                 className="text-muted-foreground/40 hover:text-muted-foreground text-lg font-bold tracking-wider transition-colors"
               >
-                {sponsor}
-              </span>
+                {sponsor.title}
+              </a>
             ))}
           </div>
         </div>
